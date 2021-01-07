@@ -2,7 +2,7 @@
 
 void brute(int (*s) [21], int *team, int start, int link, int index, int n, int *minp) {
     if (index == n) {
-        int startTeam = 0, linkTeam, i, j, min;
+        int startTeam = 0, linkTeam = 0, i, j, min;
         for (i=0 ; i<n ; i++) {
             for (j=0 ; j<i ; j++) {
                 if (team[i] == 1 && team[j] == 1) {
